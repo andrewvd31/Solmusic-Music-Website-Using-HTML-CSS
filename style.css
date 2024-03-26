@@ -94,6 +94,7 @@ nav{
 
 nav ul{
     display: flex;
+    list-style: none;
 }
 
 nav ul a,span{
@@ -118,7 +119,7 @@ nav ul a{
     display: none;
 }
 
-.navbar-mobile{
+.navbar-mobile,.logo-mobile{
     display: none;
 }
 
@@ -337,14 +338,13 @@ footer .quick-links p{
     }
     /*imp! NAVBAR CSS */
     nav{
-        justify-content: end;
         padding: 2rem;
     }
     .navbar-left,.navbar-right{
         display: none;
     }
-    .fa-solid.fa-bars{
-        display: block;
+    .logo-mobile,.fa-solid.fa-bars{
+        display: inline-block;
     }
     .fa-solid.fa-bars:hover + .navbar-mobile{
         display: block;
@@ -355,7 +355,7 @@ footer .quick-links p{
         left: 0;
         background-color: #08192D;
         width: 100%;
-        padding: 4rem 4rem 4rem 1.5rem;
+        padding: 2rem 4rem 1rem 2rem;
     }
     .navbar-mobile ul{
         flex-direction: column;
